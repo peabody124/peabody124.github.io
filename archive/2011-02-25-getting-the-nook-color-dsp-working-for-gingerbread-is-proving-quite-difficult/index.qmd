@@ -1,0 +1,27 @@
+---
+title: "Getting the Nook Color DSP working for GingerBread is proving quite difficult."
+date: 2011-02-25
+original_url: "https://buildandcrash.blogspot.com/2011/02/getting-nook-color-dsp-working-for.html"
+---
+Essentially that playing video goes through this chain in gingerbread:
+
+- Android level (haven't explored yet)
+- libstagefright
+- libOMX (OpenMAX)
+- libbridge
+- ti dsp bridge driver (kernel driver)
+- physical DSP
+
+And in the stock CM7 these libraries seem to have incompatibilities.  In addition, the source and version of them seems poorly documented which doesn't help - as well as finding "official" compatible releases.
+
+Dalingrin has backported the 2.9.32 dspbridge driver (from the  cm-nook branch I believe) to the nook 2.9.29 branch and this gets us  able to load the dsp image using the libbridge present in CM7.
+
+I would like to know which version of OMX is meant to be running with GingerBread.  Supposedly the harware-ti-omap3 branch in CM7 has working DSP on an OMAP3 platform but I would love to see a hard confirmation of this.  If this is the case, then it's likely our problem exists in the kernel driver as everything else would be the same on either sholes or n900.
+
+The main problem is we need a more systematic way of testing where in this chain things are breaking that simply dsp image loads but video doesn't play.  Especially find out if the userspace errors trace to a kernel error deep down, which would be consistent with the previous paragraph.
+
+**Other branches**
+OMAPZoom has a lot of development going on in their OMAP3/OMX/kernel-dspbridge/userspace-dspbridge branches.  However, porting the hardware-ti-omap3 doesn't compile because it's coupled to other changes in the base framework. 
+
+**omapzoom gingerbread omx**: after changing some libbridge/inc paths compiles file.  Need to test.
+**omapzoom remotes/origin/dspbridge:**  hard to port into 2.6.29.  a lot of the definitions it uses are in files that have shuffledaround between omap-mach2 and plat-omap/include/mach.

@@ -1,0 +1,25 @@
+---
+title: "Board development"
+date: 2012-10-26
+original_url: "https://buildandcrash.blogspot.com/2012/10/board-development.html"
+categories:
+  - "Freedom"
+---
+So I wanted a free alternative to some of the hardware I've been using for OP, and also wanted a few capabilities outside the normal boards so have been laying out a new one.  A first pass of floor planning is complete now and I need to start getting specific on the pin mappings to get the best routing.  Current schematic:
+
+ 1. STM32F4
+ 2. HMC5883 magnetometer
+ 3. MS5611 pressure sensor
+ 4. MPU6000 accel/gyro
+ 5. RFM22b modem
+ 6. Gumstix overo headers
+
+Because with Cossacs we've seen power regulation is a critical issue and can negatively influence the attitude I'm trying a different approach to power.  Using a switching 5V supply that can take anything from 2-15V to feed a set of 3.3V regulators for the various components.  I do need to verify that this is appropriate for the Gumstix and that the 1.5A the chip I'm looking at is sufficient for the whole board.
+
+Some additional features Kenz has requested are sufficient external ADC inputs for miscellaneous sensors so my target is the current/voltage sensors + 4 more (ideally shared with the PWM lines).
+
+The headers for PWM input/output are something I want to critically evaluate.  At least for quads it's silly to dedicate so much board real estate to 100 mil headers.  Currently they fit on the board but I'm not sure I want them.  Similarly I'm not sure how much I care to keep PWM input honestly.  A PWM->PPM encoder can be used as a fall back.  I would probably prefer to dedicate this space to a CAN transceiver.
+
+Finally if it were possible, I would love to get a CPLD/FPGA on the board to have some remaining flexibility to reconfigure things.
+
+Updates to come.

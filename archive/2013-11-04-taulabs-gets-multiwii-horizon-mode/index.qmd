@@ -1,0 +1,32 @@
+---
+title: "TauLabs gets MultiWii Horizon mode"
+date: 2013-11-04
+original_url: "https://buildandcrash.blogspot.com/2013/11/taulabs-gets-multiwii-horizon-mode.html"
+---
+Some people were asking about Tau Labs getting support for a mode like [MutiWii horizon](http://www.multiwii.com/wiki/index.php?title=Horizon). Credit goes to them for describing it and testing, as well as the MultiWii guys for the idea. In this mode as you move the stick it smoothly transitions from an attitude mode controller (in the middle region) to a rate controller (in the outer region). This means you can have the benefits of a pretty tightly locked self leveling mode with an aggressive rate mode.
+
+Anyway, I whipped it up this morning and managed to get some tests in this evening. It's not identical to MultiWii but it's pretty similar. It felt really fun to fly and was neat having the best of both worlds. It was also fairly natural to fly.
+
+::: {.archive-video video-id="78585463" source="vimeo"}
+:::
+
+  
+
+This tricopter wasn't really tuned up so the rates are a bit slow and my loops had to be quite high. The leveling performance was good as always and it felt good in attitude mode regions of the stick range. The rate mode also felt good aside from not being fast enough.
+
+I also tested it on a plane and had no issues there. Nice stabilization in the center and was able to do rolls and flips fine (although again it did not have a fast enough rate so they were fairly slow rolls). Hopefully you guys enjoy the few bloopers at the end. It's been a while since I did any flips.
+
+(Updated) Here it is on Aggressor with Sparky doing some pretty nice tight flips
+
+::: {.archive-video video-id="79046689" source="vimeo" title="Horizon Mode - Flipping"}
+:::
+
+As an aside - we recently added an exponential to Tau Labs rate mode. This allows you to set a really high maximum rate (e.g. 500 or 600 deg/s if you set your gyro max rate high enough) while keeping good control in the middle region. Using this also works in horizon mode, so you can keep all your settings that you tuned independently in attitude and rate mode and it will just switch between them.
+
+If you want to test it [here is a version for OSX](https://dl.dropboxusercontent.com/u/6645063/TauLabs-20131104-6f25da28-horizon.dmg) and [here is a version for windows](https://dl.dropboxusercontent.com/u/6645063/TauLabs-20131104-6f25da28-horizon.exe).  BTW there was a problem with the GCS on OSX 10.9 but that is fixed now. **(Warning, the firmware in this doesn't flip properly and will do a split-S maneuver automatically. U****se this updated firmware)**
+
+- [Sparky](https://dl.dropboxusercontent.com/u/6645063/fw_sparky_horizon.tlfw)
+- [CopterControl](https://dl.dropboxusercontent.com/u/6645063/fw_coptercontrol_horizon.tlfw)
+- [Quanton](https://dl.dropboxusercontent.com/u/6645063/fw_quanton_horizon.tlfw)
+
+If you want to test it [here is a version for OSX](https://dl.dropboxusercontent.com/u/6645063/TauLabs-20131113-73f87495-horizon.dmg) and [here is a version for windows](https://dl.dropboxusercontent.com/u/6645063/TauLabs-20131113-73f87495-horizon.exe).

@@ -1,0 +1,14 @@
+---
+title: "Welcome to the New Site"
+date: 2026-11-22
+description: "Starting a new technical blog covering computer vision, differentiable biomechanics, foundation models for clinical movement analysis, and upcoming papers—alongside the Build & Crash (2010–2017) archive."
+categories:
+  - Announcements
+---
+
+This site brings together two threads of my work:
+
+1. **New technical writing & paper notes** (here under **Blog** and [Publications](../../publications.qmd)), focusing on markerless motion capture, differentiable biomechanics, foundation models for clinical movement understanding, and precision rehabilitation.
+2. **The [Build & Crash Archive](../../archive.qmd)** — 58 posts migrated from my 2010–2017 Blogspot covering open-source flight controllers (OpenPilot, Tau Labs, Sparky, Freedom), embedded hardware, CNC machining, and early EEG/EMG projects.
+
+Writeups on upcoming papers will be posted here soon.

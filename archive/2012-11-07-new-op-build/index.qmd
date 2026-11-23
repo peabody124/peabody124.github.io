@@ -1,0 +1,11 @@
+---
+title: "New OP build"
+date: 2012-11-07
+original_url: "https://buildandcrash.blogspot.com/2012/11/new-op-build.html"
+---
+Since the new powers that be at OpenPilot would rather remove autotuning than simply fix the problem with it (and three weeks later still leave the fix rotting in review) here are builds that make sure you cannot fly with Autotune without enabling the module.  It also includes the very nice find from cyr which improves the estimation of level.
+
+OSX: [https://dl.dropbox.com/u/6645063/OpenPilot-20121108-e303b8fd.dmg](https://dl.dropbox.com/u/6645063/OpenPilot-20121108-e303b8fd.dmg)
+Windows: [https://dl.dropbox.com/u/6645063/OpenPilot-20121108-e303b8fd-install.exe](https://dl.dropbox.com/u/6645063/OpenPilot-20121108-e303b8fd-install.exe)
+Linux: [https://dl.dropbox.com/u/6645063/openpilot_0.1.0-20121108-e303b8fd_amd64.deb](https://dl.dropbox.com/u/6645063/openpilot_0.1.0-20121108-e303b8fd_amd64.deb)
+Android: [https://dl.dropbox.com/u/6645063/androidgcs-20121108-e303b8fd.apk](https://dl.dropbox.com/u/6645063/androidgcs-20121108-e303b8fd.apk)

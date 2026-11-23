@@ -1,0 +1,7 @@
+# Defaults applied to all new technical / research posts in posts/
+author: "R. James Cotton"
+freeze: true
+title-block-banner: true
+citation: true
+categories:
+  - Research

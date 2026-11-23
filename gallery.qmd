@@ -1,0 +1,40 @@
+---
+title: "Media Gallery"
+subtitle: "Hardware builds, flight tests, PCBs, and demos from the Build & Crash era (2013–2018)"
+resources:
+  - "gallery/media/**"
+listing:
+  id: media-gallery
+  contents: gallery/gallery.yml
+  template: gallery/gallery.ejs
+  sort: "date desc"
+  categories: true
+  filter-ui: [title, description, date]
+  page-size: 90
+page-layout: full
+title-block-banner: true
+---
+
+A visual archive of hardware prototypes, flight-controller builds, Tau Labs / Sparky / BrushedSparky / TauOSD flight tests, CNC builds, LQG control experiments, and wearable EMG/EEG demos alongside the [Build & Crash archive](archive.qmd).
+
+::: {#media-gallery}
+:::
+
+```{=html}
+<script>
+document.addEventListener("click", function (e) {
+  const trigger = e.target.closest(".gallery-yt-trigger");
+  if (!trigger) return;
+  const ytId = trigger.getAttribute("data-yt-id");
+  const title = trigger.getAttribute("data-yt-title") || "YouTube video";
+  if (!ytId) return;
+  const iframe = document.createElement("iframe");
+  iframe.src = "https://www.youtube.com/embed/" + encodeURIComponent(ytId) + "?autoplay=1&rel=0";
+  iframe.title = title;
+  iframe.className = "gallery-yt-iframe";
+  iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+  iframe.allowFullscreen = true;
+  trigger.replaceWith(iframe);
+});
+</script>
+```

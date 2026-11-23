@@ -1,0 +1,15 @@
+---
+title: "Board development update"
+date: 2012-10-30
+original_url: "https://buildandcrash.blogspot.com/2012/10/board-development-update.html"
+image: "media/Screen_Shot_2012-10-30_at_11.08.44_PM.png"
+categories:
+  - "Freedom"
+---
+Ok progress is being made.  I have the schematic essentially finished and the placement done.  I need to figure out how to convince Altium DRC not to complain about the components under the Overo.   Truth be told, I'm anxious about them.  However I've checked quite a few times on my existing board and everything seems clear.
+
+So a few screenshots:
+
+![](media/Screen_Shot_2012-10-30_at_11.08.44_PM.png)
+
+![](media/Screen_Shot_2012-10-30_at_11.08.58_PM.png)

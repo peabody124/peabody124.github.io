@@ -1,0 +1,57 @@
+---
+title: "Microquad from hovership pro"
+date: 2014-02-23
+original_url: "https://buildandcrash.blogspot.com/2014/02/microquad-from-hovership-pro.html"
+image: "media/DSC02135.JPG"
+---
+**Update:** see [this post](../2014-03-10-microquad-update/index.qmd) for the latest with this frame. See the [entry on thingverse](http://www.thingiverse.com/thing:251002) to make your own. 
+
+![](media/DSC02135.JPG)
+
+Steve (aka hovership) was nice enough to send me one of his [3D printed foldable microquads](http://www.hovership.com/2014/02/07/3d-printable-folding-micro-fpv-h-quadcopter/), which I'm really excited about. It's nice and small and even has an offset mounting hole for Sparky which is pretty awesome.  It is designed for FPV, although I haven't got it set up for that yet. So far it is a ton of fun for normal flying.
+
+For electronics I'm using:
+
+- [Sparky](../2013-05-19-sparky-testing-and-building-no-crashing/index.qmd) flight controller
+- Motors: [leftward](http://www.google.com/url?q=http%3A%2F%2Fwww.myrcmart.com%2Fzmr-1804-2400kv-micro-outrunner-brushless-motor-clockwise-p-6281.html&sa=D&sntz=1&usg=AFQjCNHqJszLWSIOwDA8vXKMbUHQQpKAyg) and [rightward](http://www.google.com/url?q=http%3A%2F%2Fwww.myrcmart.com%2Frcx-1804-2400kv-micro-outrunner-brushless-motor-anticlockwise-p-6280.html&sa=D&sntz=1&usg=AFQjCNFXzH6q1chDPLLuW0TAAckqWMLKTg) nuts
+- ESCs: AfroESC 12A
+
+## Construction
+
+I took some photos to document the construction.
+
+   ![](media/DSC02122.JPG) ![](media/IMG_20140221_172354.jpg)   ![](media/IMG_20140221_172743.jpg) ![](media/IMG_20140221_172924.jpg)   ![](media/IMG_20140221_172354.jpg) ![](media/IMG_20140221_172743.jpg)   ![](media/IMG_20140221_172822.jpg) ![](media/DSC02123.JPG)   ![](media/DSC02124.JPG) ![](media/DSC02125.JPG)   ![](media/DSC02126.JPG) ![](media/DSC02127.JPG)   ![](media/DSC02128.JPG) ![](media/DSC02129.JPG)   ![](media/DSC02130.JPG) ![](media/DSC02131.JPG)   ![](media/DSC02132.JPG) ![](media/DSC02134.JPG)   ![](media/DSC02135.JPG) ![](media/DSC02137.JPG)   ![](media/DSC02139.JPG)   
+I like how the single sided low profile of Sparky works well with getting it nice and small.
+
+## Configuration
+
+I configured it for basic flight the way described in this video.  
+
+  
+
+::: {.archive-video video-id="86279413" source="vimeo"}
+:::
+
+  
+The tuning values that worked well were:
+
+I wanted this quad to be really well calibrated for optimal navigation. I went ahead and  ran the complete temperature and 6 point calibration, as well as using an advanced feature for autotuning that lets you adjust the aggressiveness of the tuning. Here is a video that describes the process:
+
+::: {.archive-video video-id="87430180" source="vimeo"}
+:::
+
+  
+The tuning values I ended up with were:
+
+![](media/Screen_Shot_2014-02-22_at_5.48.45_PM.png)
+
+## Flying
+
+I wanted to have more time to really take it out and tear around, but time is limited. So far I really like how it flies. It's quite locked in and snappy and has probably 7-8 minutes with 3S 800mAh batteries. I've given it some fairly heavy landings and the landing gear is holding up well. No majors crashes although some small flying into things. It also can carry a GoPro which will make it a nice easy traveler for taking quick videos. Looks like 3D printed quads are going to be big this year. 
+
+::: {.archive-video video-id="87433569" source="vimeo"}
+:::
+
+  
+
+Coming up (hopefully), will be a video about tuning up the quad for the best navigation and RTH. I've already got some improvements to altitude control in the pipeline from playing with this.

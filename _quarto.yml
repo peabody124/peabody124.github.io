@@ -1,0 +1,52 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "posts/**/*.qmd"
+    - "archive/**/*.qmd"
+
+website:
+  title: "R. James Cotton"
+  site-url: "https://peabody124.github.io"
+  description: "Academic website and technical blog of R. James Cotton, MD, PhD — computer vision, biomechanics, neural interfaces, and precision rehabilitation, plus the Build and Crash (2010–2017) archive."
+  navbar:
+    left:
+      - text: "Blog"
+        href: index.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Build & Crash Archive"
+        menu:
+          - text: "Archive Posts (2010–2017)"
+            href: archive.qmd
+          - text: "Media Gallery"
+            href: gallery.qmd
+      - text: "About"
+        href: about.qmd
+    right:
+      - text: '<i class="ai ai-google-scholar" aria-hidden="true"></i><span class="visually-hidden">Google Scholar</span>'
+        href: https://scholar.google.com/citations?user=vY0f3b8AAAAJ
+        aria-label: Google Scholar
+      - text: '<i class="ai ai-orcid" aria-hidden="true"></i><span class="visually-hidden">ORCID</span>'
+        href: https://orcid.org/0000-0001-5714-1400
+        aria-label: ORCID
+      - icon: github
+        href: https://github.com/peabody124
+        aria-label: GitHub
+  search: true
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+filters:
+  - filters/archive-banner.lua
+  - filters/archive-media.lua

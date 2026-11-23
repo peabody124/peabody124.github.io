@@ -1,0 +1,562 @@
+# Mapping of archived videos (Vimeo IDs and local Shapeoko MP4s) to YouTube URLs.
+# To restore any missing video:
+#   1. Upload the video to YouTube.
+#   2. Paste the YouTube URL (e.g. "https://youtu.be/...") into `youtube:` below.
+#   3. Run `quarto render` (or push to GitHub) — every post referencing that video
+#      will automatically upgrade to an embedded YouTube player.
+
+videos:
+  "eeg_blogger_video":
+    source: mp4
+    status: youtube
+    title: "EEG electrode setup and recording (rescued Blogger video)"
+    youtube: "https://youtu.be/KNOevZsTVPg"
+    posts:
+      - 2014-03-04-eeg-and-decoding
+  "VID_20140218_232047":
+    source: mp4
+    status: youtube
+    title: "Shapeoko CNC cutting video (VID_20140218_232047.mp4)"
+    youtube: "https://youtu.be/RPq_8uig3wY"
+    posts:
+      - 2014-02-22-shapeoko-assembly-and-testing
+  "VID_20140218_232637":
+    source: mp4
+    status: youtube
+    title: "Shapeoko CNC cutting video (VID_20140218_232637.mp4)"
+    youtube: "https://youtu.be/csbkH0CPJ90"
+    posts:
+      - 2014-02-22-shapeoko-assembly-and-testing
+  "VID_20140218_232909":
+    source: mp4
+    status: youtube
+    title: "Shapeoko CNC cutting video (VID_20140218_232909.mp4)"
+    youtube: "https://youtu.be/_zRwtrsi2Tc"
+    posts:
+      - 2014-02-22-shapeoko-assembly-and-testing
+  "24952342":
+    source: vimeo
+    status: live
+    title: "More ESC testing"
+    youtube: ""
+    posts:
+      - 2011-11-21-esc-development
+  "64357725":
+    source: vimeo
+    status: live
+    title: "TriBlivion"
+    youtube: ""
+    posts:
+      - 2013-04-18-triblivion-and-sparky
+  "25742413":
+    source: vimeo
+    status: live
+    title: "PID Control structure and tuning"
+    youtube: ""
+    posts:
+      - 2014-03-23-vertical-control
+  "14679877":
+    source: vimeo
+    status: live
+    title: "OpenPilot: First stable flight"
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "15057610":
+    source: vimeo
+    status: live
+    title: "OpenPilot Stabilized Quad Flight"
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "19612039":
+    source: vimeo
+    status: live
+    title: "CopterControl Initial Testing"
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "32459975":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2011-11-21-esc-development
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "33139935":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2011-11-21-esc-development
+  "53914555":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2012-11-19-freedom-assembly-and-first-flight
+  "57897322":
+    source: vimeo
+    status: missing
+    title: "Iconic-X FPV flying"
+    youtube: ""
+    posts:
+      - 2013-01-23-tau-labs-kicking-along
+  "57907478":
+    source: vimeo
+    status: missing
+    title: "Autotuning Howto"
+    youtube: ""
+    posts:
+      - 2013-01-23-tau-labs-kicking-along
+  "57953460":
+    source: vimeo
+    status: missing
+    title: "Best stabilization so far on UAP-1 with RusticWave"
+    youtube: ""
+    posts:
+      - 2013-01-23-tau-labs-kicking-along
+  "58002445":
+    source: vimeo
+    status: missing
+    title: "Flying silver hornet with phone"
+    youtube: ""
+    posts:
+      - 2013-01-23-tau-labs-kicking-along
+  "51659303":
+    source: vimeo
+    status: missing
+    title: "AndroidGCS Transmitter - Navigation Control Demo"
+    youtube: ""
+    posts:
+      - 2013-04-07-tablet-control-testing
+      - 2014-08-29-sparky-20-and-taulink
+  "63529694":
+    source: vimeo
+    status: missing
+    title: "Tau Labs Tablet Control"
+    youtube: ""
+    posts:
+      - 2013-04-07-tablet-control-testing
+      - 2013-04-18-triblivion-and-sparky
+      - 2014-08-29-sparky-20-and-taulink
+  "63619336":
+    source: vimeo
+    status: missing
+    title: "Sparky First Flights"
+    youtube: ""
+    posts:
+      - 2013-04-18-triblivion-and-sparky
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "64454388":
+    source: vimeo
+    status: missing
+    title: "Rover Navigation Testing"
+    youtube: ""
+    posts:
+      - 2013-04-24-rover-testing-fun
+  "65476828":
+    source: vimeo
+    status: youtube
+    title: "Sparky Brushless Gimbal add on board testing"
+    youtube: "https://youtu.be/n6d6ucp4TxY"
+    posts:
+      - 2013-05-06-brushless-gimbal-driver-add-on-for-sparky
+      - 2013-05-19-sparky-testing-and-building-no-crashing
+  "66517016":
+    source: vimeo
+    status: missing
+    title: "Sparky Testing"
+    youtube: ""
+    posts:
+      - 2013-05-19-sparky-testing-and-building-no-crashing
+  "84639710":
+    source: vimeo
+    status: missing
+    title: "Sparky testing PH and RTH"
+    youtube: ""
+    posts:
+      - 2013-05-19-sparky-testing-and-building-no-crashing
+  "66624740":
+    source: vimeo
+    status: missing
+    title: "Sparky Brushless Gimbal add-on success"
+    youtube: ""
+    posts:
+      - 2013-05-21-sparky-brushless-gimbal-controller-testing
+  "72598372":
+    source: vimeo
+    status: missing
+    title: "Sonar altitude hold"
+    youtube: ""
+    posts:
+      - 2013-08-18-tau-labs-sonar-altitude-hold
+  "73060129":
+    source: vimeo
+    status: missing
+    title: "Controlling quad with a wave of the hand"
+    youtube: ""
+    posts:
+      - 2013-08-24-controlling-a-quad-with-a-wave-of-your-hand
+  "78585463":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2013-11-04-taulabs-gets-multiwii-horizon-mode
+  "79046689":
+    source: vimeo
+    status: missing
+    title: "Horizon Mode - Flipping"
+    youtube: ""
+    posts:
+      - 2013-11-04-taulabs-gets-multiwii-horizon-mode
+  "79603584":
+    source: vimeo
+    status: youtube
+    title: "Return to home and landing"
+    youtube: "https://youtu.be/OQRiH2rhlb4"
+    posts:
+      - 2013-11-17-return-to-home-and-landing
+  "83416006":
+    source: vimeo
+    status: missing
+    title: "Tau Labs Loiter and RTH testing"
+    youtube: ""
+    posts:
+      - 2014-01-05-loiter-mode-and-more-rth-testing
+  "84103008":
+    source: vimeo
+    status: missing
+    title: "EEG Testing"
+    youtube: ""
+    posts:
+      - 2014-01-13-eeg-stuffing-and-testing
+  "84184234":
+    source: vimeo
+    status: missing
+    title: "Tau Labs Waypoint Testing"
+    youtube: ""
+    posts:
+      - 2014-01-18-navigation-testing-and-post-crash-disection
+  "84484126":
+    source: vimeo
+    status: missing
+    title: "More Waypoints and Crash Analysis"
+    youtube: ""
+    posts:
+      - 2014-01-18-navigation-testing-and-post-crash-disection
+  "85122181":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-01-26-path-smoothing-demonstration
+  "87362150":
+    source: vimeo
+    status: youtube
+    title: "Shapeoko CNC cutting humerus"
+    youtube: "https://youtu.be/eSvmx1ezSfY"
+    posts:
+      - 2014-02-22-shapeoko-assembly-and-testing
+  "86279413":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-02-23-microquad-from-hovership-pro
+  "87430180":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-02-23-microquad-from-hovership-pro
+  "87433569":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-02-23-microquad-from-hovership-pro
+  "85627917":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-03-04-eeg-and-decoding
+  "88209271":
+    source: vimeo
+    status: youtube
+    title: "EEG decoding stimulus testing"
+    youtube: "https://youtu.be/UyC-JHO5Oxs"
+    posts:
+      - 2014-03-04-eeg-and-decoding
+  "88023020":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-03-10-microquad-update
+  "88439963":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-03-10-microquad-update
+      - 2014-03-23-vertical-control
+  "89117769":
+    source: vimeo
+    status: youtube
+    title: "INS altitude and climbrate log overlay"
+    youtube: "https://youtu.be/eMKvOaM14H0"
+    posts:
+      - 2014-03-15-logging-and-python-parsing
+      - 2014-03-23-vertical-control
+  "88549064":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-03-23-vertical-control
+  "89844044":
+    source: vimeo
+    status: youtube
+    title: "Vertical control INS altitude hold test"
+    youtube: "https://youtu.be/SVXON7Bg_4A"
+    posts:
+      - 2014-03-23-vertical-control
+  "99929749":
+    source: vimeo
+    status: youtube
+    title: "Flying Spark in Santorini (AREADNE highlights)"
+    youtube: "https://youtu.be/UgUIQ9hL6L8"
+    posts:
+      - 2014-07-04-flying-spark-3d-printed-mini-quad
+  "99939830":
+    source: vimeo
+    status: youtube
+    title: "Flying Spark autotune"
+    youtube: "https://youtu.be/rg7E3QjmxLk"
+    posts:
+      - 2014-07-04-flying-spark-3d-printed-mini-quad
+  "99941770":
+    source: vimeo
+    status: youtube
+    title: "Flying Spark in Santorini (AREADNE 2014)"
+    youtube: "https://youtu.be/O_glSYj36Jk"
+    posts:
+      - 2014-07-04-flying-spark-3d-printed-mini-quad
+  "104575370":
+    source: vimeo
+    status: youtube
+    title: "SparkyBGC v2 flight test"
+    youtube: "https://youtu.be/RFcUuNkc99o"
+    posts:
+      - 2014-08-27-sparky-brushless-gimbal-controller-version-2
+  "106104484":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-08-27-sparky-brushless-gimbal-controller-version-2
+  "66987484":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-08-27-sparky-brushless-gimbal-controller-version-2
+      - 2014-10-25-reflecting-on-four-years-of-development
+      - 2015-05-07-tau-labs-and-cyphy-level-up
+  "91046135":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-08-27-sparky-brushless-gimbal-controller-version-2
+      - 2014-08-29-sparky-20-and-taulink
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "104670658":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-08-29-sparky-20-and-taulink
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "104718506":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-08-29-sparky-20-and-taulink
+  "105504442":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-08-29-sparky-20-and-taulink
+      - 2015-02-28-brushedsparky-sparky2-microquads
+  "127703051":
+    source: vimeo
+    status: youtube
+    title: "Sparky2 RFM22B TauLink RC test (raw clips in Sparky2-PH/)"
+    youtube: "https://youtu.be/AoMe6WRBJg8"
+    posts:
+      - 2014-08-29-sparky-20-and-taulink
+  "17200010":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "23865574":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "36433767":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "42015859":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "48211124":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-10-25-reflecting-on-four-years-of-development
+  "110564442":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2014-10-31-gemini-powered-by-tau-labs-tear-down-and-review
+  "110831709":
+    source: vimeo
+    status: youtube
+    title: "TBS Gemini FPV flight clip"
+    youtube: "https://youtu.be/4fTNTcUqupc"
+    posts:
+      - 2014-10-31-gemini-powered-by-tau-labs-tear-down-and-review
+  "110206635":
+    source: vimeo
+    status: youtube
+    title: "Seeing Spark POI tracking"
+    youtube: "https://youtu.be/vVlzFfcm8NA"
+    posts:
+      - 2014-11-02-seeing-spark-sparky2-and-sparkybgc-quad
+  "110723868":
+    source: vimeo
+    status: youtube
+    title: "Seeing Spark flight test (candidate clip)"
+    youtube: "https://youtu.be/U99jMvQ6loc"
+    posts:
+      - 2014-11-02-seeing-spark-sparky2-and-sparkybgc-quad
+  "117686343":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-01-24-ekf-enhancements-and-unit-tests
+  "118370663":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-01-24-ekf-enhancements-and-unit-tests
+  "118383414":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-01-31-oneshot125-quantitative-testing
+  "118384283":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-01-31-oneshot125-quantitative-testing
+  "120901200":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-02-28-brushedsparky-sparky2-microquads
+  "123224072":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-03-25-brushedsparky-v02
+  "104806460":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-03-27-blheli-oneshot-quantitative-testing
+      - 2016-10-30-linear-gaussian-quadratic-control-system
+  "124850842":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-05-07-tau-labs-and-cyphy-level-up
+  "127173233":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2015-05-07-tau-labs-and-cyphy-level-up
+  "128424367":
+    source: vimeo
+    status: youtube
+    title: "TauOSD + VTX flight test"
+    youtube: "https://youtu.be/HszGj-yp8P0"
+    posts:
+      - 2015-05-12-tauosd-vtx
+  "59860771":
+    source: vimeo
+    status: missing
+    title: ""
+    youtube: ""
+    posts:
+      - 2016-10-30-linear-gaussian-quadratic-control-system

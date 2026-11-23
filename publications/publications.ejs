@@ -1,0 +1,105 @@
+```{=html}
+<div class="list publications-list">
+<% for (const item of items) { %>
+  <article class="pub-card<%= item.image ? '' : ' pub-card-no-thumb' %>" <%= metadataAttrs(item) %>>
+    <% if (item.image) { %>
+    <div class="pub-media">
+      <div class="pub-badges">
+        <span class="pub-year-pill listing-date"><%= item.year %></span>
+        <% if (item.venue_short) { %>
+          <span class="pub-venue-pill pub-venue-<%= item.venue_type || 'journal' %>"><%= item.venue_short %></span>
+        <% } %>
+      </div>
+      <a class="pub-thumb-link" href="<%- item.primary_url || item.image %>" target="_blank" rel="noopener">
+        <img src="<%- item.image %>" alt="Main figure for <%= item.title %>" class="pub-thumb" loading="lazy">
+      </a>
+    </div>
+    <% } %>
+
+    <div class="pub-body">
+      <% if (!item.image) { %>
+      <div class="pub-badges pub-badges-inline">
+        <span class="pub-year-pill listing-date"><%= item.year %></span>
+        <% if (item.venue_short) { %>
+          <span class="pub-venue-pill pub-venue-<%= item.venue_type || 'journal' %>"><%= item.venue_short %></span>
+        <% } %>
+      </div>
+      <% } %>
+
+      <h3 class="pub-title listing-title">
+        <% if (item.primary_url) { %>
+          <a href="<%- item.primary_url %>" target="_blank" rel="noopener"><%= item.title %></a>
+        <% } else { %>
+          <%= item.title %>
+        <% } %>
+      </h3>
+
+      <% if (item.authors_display || item.author) {
+           const authorParts = String(item.authors_display || item.author).split("R. James Cotton");
+      %>
+        <div class="pub-authors listing-author"><% for (let idx = 0; idx < authorParts.length; idx++) { %><%= authorParts[idx] %><% if (idx < authorParts.length - 1) { %><span class="me-author">R. James Cotton</span><% } %><% } %></div>
+      <% } %>
+
+      <div class="pub-venue">
+        <em><%= item.venue %></em><% if (item.year) { %>, <%= item.year %><% } %>
+      </div>
+
+      <% if (item.summary) { %>
+        <p class="pub-summary listing-description"><%= item.summary %></p>
+      <% } %>
+
+      <div class="pub-links">
+        <% if (item.project_url) { %>
+          <a class="pub-btn pub-btn-project" href="<%- item.project_url %>" target="_blank" rel="noopener">
+            <i class="fa-solid fa-globe"></i> Project Page
+          </a>
+        <% } %>
+
+        <% if (item.ieee_url) { %>
+          <a class="pub-btn pub-btn-ieee" href="<%- item.ieee_url %>" target="_blank" rel="noopener">
+            <svg class="pub-svg-icon" viewBox="0 0 24 24" aria-hidden="true"><polygon points="12,2 22,12 12,22 2,12" fill="none" stroke="currentColor" stroke-width="2"/><text x="12" y="15.2" text-anchor="middle" font-size="7.2" font-weight="700" fill="currentColor" font-family="sans-serif">IEEE</text></svg>
+            IEEE
+          </a>
+        <% } else if (item.journal_url) { %>
+          <a class="pub-btn pub-btn-journal" href="<%- item.journal_url %>" target="_blank" rel="noopener">
+            <i class="ai ai-doi"></i> <%= item.journal_label || 'Paper' %>
+          </a>
+        <% } %>
+
+        <% if (item.pubmed_url) { %>
+          <a class="pub-btn pub-btn-pubmed" href="<%- item.pubmed_url %>" target="_blank" rel="noopener">
+            <i class="ai ai-pubmed"></i> PubMed
+          </a>
+        <% } %>
+
+        <% if (item.arxiv_url) { %>
+          <a class="pub-btn pub-btn-arxiv" href="<%- item.arxiv_url %>" target="_blank" rel="noopener">
+            <i class="ai ai-arxiv"></i> arXiv
+          </a>
+        <% } %>
+
+        <% if (item.biorxiv_url) { %>
+          <a class="pub-btn pub-btn-biorxiv" href="<%- item.biorxiv_url %>" target="_blank" rel="noopener">
+            <i class="ai ai-biorxiv"></i> bioRxiv
+          </a>
+        <% } %>
+
+        <% if (item.code_url) { %>
+          <a class="pub-btn pub-btn-code" href="<%- item.code_url %>" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> Code
+          </a>
+        <% } %>
+      </div>
+
+      <% if (item.categories && item.categories.length) { %>
+        <div class="listing-categories d-none">
+          <% for (const cat of item.categories) { %>
+            <div class="listing-category"><%= cat %></div>
+          <% } %>
+        </div>
+      <% } %>
+    </div>
+  </article>
+<% } %>
+</div>
+```

@@ -1,0 +1,29 @@
+# Quarto build & cache
+/_site/
+/.quarto/
+/site_libs/
+*.html
+*_files/
+*_cache/
+
+# OS & editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Large raw videos (host on YouTube via video-map.yml); allow small embedded clips
+*.mp4
+!archive/*/media/ig_*.mp4
+!gallery/media/*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+**/*.quarto_ipynb

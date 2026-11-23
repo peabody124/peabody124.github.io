@@ -1,0 +1,22 @@
+---
+title: "Tablet control testing"
+date: 2013-04-07
+original_url: "https://buildandcrash.blogspot.com/2013/04/tablet-control-testing.html"
+---
+So I finally got some flight tests done with Tau Labs' tablet control feature, although it was a bit on the windy side. In this mode the flight mode switch is flipped to "TabletControl" and which point control is ceded to the tablet. This means you can use labeled buttons to control from a large number of flight modes instead of confusing switch positions, as well as seeing the performance from the tablet.
+
+::: {.archive-video video-id="63529694" source="vimeo" title="Tau Labs Tablet Control"}
+:::
+
+This mode allows Position Hold, Return to Home, Return to Tablet, Follow Me, Fly Path, Camera POI mode and Land. Most of these are demonstrated in the video.
+
+This follows up on some previous work here:
+
+::: {.archive-video video-id="51659303" source="vimeo" title="AndroidGCS Transmitter - Navigation Control Demo"}
+:::
+
+but I found the OPLink wasn't reliable to use as the only link and had some fly-aways. This system keeps the regular transmitter in ultimate control in case anything goes wrong. Safety testing is demonstrated as well to show that the motors shut off when the transmitter is turned off. The new architecture makes it easy to define other failsafe behaviors like RTH on transmitter loss, but not until navigation is extremely robust and well tested.
+
+The results of enabling Fly Path mode were a little disappointing. It would hit the first few waypoints but the requested velocity and path follower settings weren't aggressive enough to fly upwind. More testing soon hopefully!
+
+You can get the tablet software [here](https://play.google.com/store/apps/details?id=org.taulabs.androidgcs) although the tablet control interface is disabled by default until it is a bit more tested.

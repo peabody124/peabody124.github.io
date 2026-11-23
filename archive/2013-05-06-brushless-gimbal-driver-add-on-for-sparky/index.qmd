@@ -1,0 +1,23 @@
+---
+title: "Brushless Gimbal Driver add on for Sparky"
+date: 2013-05-06
+original_url: "https://buildandcrash.blogspot.com/2013/05/brushless-gimbal-driver-add-on-for.html"
+---
+So back in January when I designed Sparky, one of the goals was to keep all the components on a single side.  Aside from making assembly a breeze, the advantage of this was that I could make an add on board for the back which would drive a brushless gimbal.
+
+I finally got around to making a prototype a few weeks back and got to test it this weekend.  The results are pretty decent for a first test.
+
+::: {.archive-video video-id="65476828" source="vimeo" title="Sparky Brushless Gimbal add on board testing"}
+:::
+
+In the first part with the transmitter it is in manual mode.  In the second part it is holding the attitude based on the transmitter stick.  In manual it moves smoothly but I still need to do some tuning for attitude mode.  It seems to ratchet a bit which I think is essentially being overtuned and briefly having the velocity go too high.
+
+I hacked up a different controller that seems to work a bit better, but I don't want to get too obsessive testing until I get a more realistic load (gimbal + camera) set up. It might also be fun to try using the LQR controller again for this.  Plus autotuning should let me characterize the whole gimbal performance just like a quad and optimize it.
+
+Fun times!
+
+Oh, and one other cool thing I need to try.  Since Sparky was sort of designed with this in mind, I'll connect two of them via CAN so I can relay the desired gimbal position from the main flight controller Sparky to the brushless gimbal Sparky.  That way both transmitter control and also things like POI tracking should work.  Similarly we can use CAN to the ground station modem and make an antenna/camera tracker pretty easily.
+
+The last thing I really need to decide on: if I don't want to continue having lines to enable or disable the gimbal outputs, then I can use 9 channels and drive a three axis gimbal.
+
+I'm also kind of tempted to hack the ESCs I made to drive a brushless as well so that it can be added to any FC as a PWM output (credit goes to dongs/timecop for doing this the other day).

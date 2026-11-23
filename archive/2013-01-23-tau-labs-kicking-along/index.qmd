@@ -1,0 +1,37 @@
+---
+title: "Tau Labs kicking along"
+date: 2013-01-23
+original_url: "https://buildandcrash.blogspot.com/2013/01/tau-labs-kicking-along.html"
+categories:
+  - "Freedom"
+  - "Tau Labs"
+---
+So for those of you not following our forums, Phoenix Pilot has an official name: Tau Labs.  For the brief announcement [see here](https://groups.google.com/forum/#!topic/phoenixpilot/DeIqCmmRyTA).  Honestly, this group is just great.  All of the main developers from OP migrated over in the early days so it's nice to have the team still working together.  In addition we regained a few people who had left OP due to the various politics there and some new people.  Edouard Lafargue who was one of the main developers of the GCS is has been helping fix some bugs in GCS telemetry and also extend the plugin system to better support new boards.  David Carlson has just designed a shield for the F3 to make that easier for people to use (and making a really cheap full autopilot solution).  Angus Peart, one of the co-founders of OP, has rejoined the project and is a great guy.  He developed the first generation of hardware which was the basis for CopterControl, wrote a lot of the original core code, and also set up the original OP forums.  We also have Vincent Kessler now who developed the port to the F4 discovery board and then the F3 discovery.  He is a great developer with an eye for details, and his F3 port really opened up a new platform that makes it readily available and makes it easy for anyone to get involved (in flying or developing).
+
+On a side note I owe a serious apology to David Carlson for how I treated him over some OP drama a few years ago.  I let myself be talked into scapegoating him and should have trusted my gut after meeting him in Portugal that he was a great guy.  After I was driven out too I ended up thinking a lot of similar things to him.  Essentially the complete lack of transparency or administrative and financial accountability left the project too much in the control of one person.  That is fine for a company but not for an open source project where people donate thousands of hours to have the rug pulled out from them.  It leaves you with no recourse of how to keep playing.  That's why I'm so please that he and Angus established the OmniLoco foundation which is the non-profit in charge of Tau Labs.  It really forces us to put policies in place to protect against that.  In addition we've tried to structure as much stuff to be as light-weight, low-cost and open as possible to avoid repeating previous slippery slopes.  Luckily everyone on the board is like-minded on these issues and I don't see any problems. 
+
+The project is just so much more fun now.  Things are much more productive when no time is wasted on bullshit politics: trying to belittle other people or projects, or plotting how best to protect a product at the expense of the broader community.  On a related note I've been reading this book [Against Intellectual Monopolies](http://levine.sscnet.ucla.edu/general/intellectual/againstfinal.htm) which I'm really loving.  It discusses when industries stagnate and lose the ability to innovate a common response is to try and restrict things and protect their monopoly position by suppressing other innovators (rent-seeking behavior).  It's both eye opening about the general issue of IP (and relates a lot to Open Source) and seems to speak to recent issues. 
+
+So clearly we have a great group together.  It reminds me of the original Portugal summit where it was just a group of friends who got along well and really like working on the same problem; it feels like a real team.  Software-wise development is really storming ahead.  There is a [test build](https://groups.google.com/forum/#!topic/phoenixpilot/rgYx-Rd1fhE) up which is all nicely branded for Tau Labs and flies superbly for me on a number of aircrafts.  Hardware wise Quanton should be out shortly, the FlyingF3 is available, and the latest revision of Freedom is out being made.  We've gotten a lot of messages from research and academic teams and who want to use our software / hardware for their projects which is extremely exciting and one of our big goals we established in our [original meeting](https://groups.google.com/d/msg/phoenixpilot/U0oTe05s66k/FfJ4iCy0dDIJ).  There is still a lot of work to be one with documentation, wiki'ing etc, but it will happen. 
+
+Here are some fun things I got working recently.  First was getting my RusticWave gimbal kicking ass!  I've been trying to get good video from the Sony HX9V for more than a year and this is the first time I was really happy: 
+
+::: {.archive-video video-id="57953460" source="vimeo" title="Best stabilization so far on UAP-1 with RusticWave"}
+:::
+
+Then I've been doing a lot of work on the android app (now up on the [store](https://play.google.com/store/apps/details?id=org.taulabs.androidgcs&feature=search_result#?t=W251bGwsMSwyLDEsIm9yZy50YXVsYWJzLmFuZHJvaWRnY3MiXQ..)).  Here is me switching quickly from viewing the quad with bluetooth during normal flying to controlling via the phone.  I wouldn't want to fly this much outside though.
+
+::: {.archive-video video-id="58002445" source="vimeo" title="Flying silver hornet with phone"}
+:::
+
+Then for anyone interested in trying out the auto tune functionality is here a quick how to video showing it off:
+
+::: {.archive-video video-id="57907478" source="vimeo" title="Autotuning Howto"}
+:::
+
+And last but not least, I finally got my Iconic-X upgraded to 10" arms and went out FPVing for the first time in a while.  There were momements where the sun glare really killed me contrast but it was lots of fun:
+
+::: {.archive-video video-id="57897322" source="vimeo" title="Iconic-X FPV flying"}
+:::
+
+So as you can see, exciting times!

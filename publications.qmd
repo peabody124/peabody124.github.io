@@ -1,0 +1,19 @@
+---
+title: "Publications"
+subtitle: "Peer-reviewed journal articles, conference papers, and preprints"
+listing:
+  id: publications-listing
+  contents: publications/publications.yml
+  template: publications/publications.ejs
+  sort: "date desc"
+  categories: true
+  filter-ui: [title, author, description, date]
+  page-size: 100
+page-layout: full
+title-block-banner: true
+---
+
+Full citation record on [Google Scholar](https://scholar.google.com/citations?user=vY0f3b8AAAAJ) and [ORCID](https://orcid.org/0000-0001-5714-1400). Use the search box or topic filters on the right to browse by research area.
+
+::: {#publications-listing}
+:::

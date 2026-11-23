@@ -1,0 +1,130 @@
+---
+title: "Seeing Spark - Sparky2 and SparkyBGC quad"
+date: 2014-11-02
+original_url: "https://buildandcrash.blogspot.com/2014/11/seeing-spark-sparky2-and-sparkybgc-quad.html"
+image: "media/IMG_20141103_112228.jpg"
+categories:
+  - "Brushless gimbal"
+  - "Sparky"
+  - "Sparky2"
+  - "SparkyBGC"
+  - "Tau Labs"
+---
+**Update: Sparky2 is available here [http://www.hobbiesfly.com/taulabs-sparky2-0.html](http://www.hobbiesfly.com/taulabs-sparky2-0.html)** 
+
+One of my longer term goals for a while is a system that can chase me around and film my friends and myself having fun. This seems to be a trendy topic this year with piles of kickstarter projects about this, so I won't pretend this is a unique idea. However I finally have something that is getting close. You can find this on [Thingiverse](http://www.thingiverse.com/thing:532808).
+
+![](media/IMG_20141103_112228.jpg)
+
+::: {.archive-video video-id="110723868" source="vimeo"}
+:::
+
+   
+
+### Boards
+
+Some of my recent boards have been coming together towards this aim (see [this post](../2014-10-25-reflecting-on-four-years-of-development/index.qmd) for a longer discussion of boards and some history). Sparky BGC is a cleaned up revision on my [previous daughter board for Sparky](../2013-05-21-sparky-brushless-gimbal-controller-testing/index.qmd) (providing BGC outputs to a normal Sparky) and adding an external sensor board for light weight gimbals. It also drops the whole thing into the standard 36x36 mm board size which makes it very convenient to stack up with a Sparky.
+
+![](media/IMG_20141025_161056.jpg)
+[Tau Link](../2014-08-29-sparky-20-and-taulink/index.qmd) is a miniature radio board that works with the [Tau Labs Android GCS](https://play.google.com/store/apps/details?id=org.taulabs.androidgcs) for telemetry. I ended up doing another revision that shrinks it down and adds a male USB connector which is more convenient when quickly plugging into an OTG cable or laptop.
+
+![](media/IMG_20141025_161016.jpg)
+
+[Sparky 2](../2014-08-29-sparky-20-and-taulink/index.qmd) is a pretty major overhaul of [Sparky 1,](../2013-05-19-sparky-testing-and-building-no-crashing/index.qmd) adding lots more IO and processing power, as well as radio capabilities which is convenient for communicating with Tau Link and ground stations.
+
+![](media/IMG_20141025_160908.jpg)
+One of the nice things about Sparky2 and SparkyBGC is that they both support CAN which provides a robust high-speed bidirectional communication bus between both boards. This means that Sparky2 (or Sparky1) can tell the gimbal about the desired angle to a position of interest for the camera.
+
+*Through discussion on IRC recently, I also realized that means it is possible to pass the heading measurements from the magnetometer on the gimbal (which is often fairly far from the motors) back to the flight controller to provide an external magnetometer for free. I'm pretty excited to try this.*
+
+All this means that the android application can easily pass the tablet or phone location up to the UAV, which can then point the camera at that location and acquire nice stabilized video. I have a few multirotors with gimbals that could be used for testing this, but they are all big and less conveinent for testing, so it was design time!
+
+### Power distro
+
+I also really wanted to try out KISS ESC18A, which are tiny little things and also do not provide a BEC outputs. That seemed like a great motivator to make a power distro board that would route the PWM signals to these little ESCs and provide 5V to the flight controller. This board also provides current and voltage monitoring back to Sparky2 and comes in at just a hair below 30mm square.
+
+![](media/pdb_unpopulated.jpg)
+You can see the wires for current voltage monitoring coming off the top, and for the ESC outputs below. The extra two outputs at the bottom at 5V and 0V. The footprints align to the KISS ESCs but can also be connected to any other ESCs. The connections for the PWM line are routed quite carefully around the edge to not obscure the power planes.
+
+![](media/pdb_zoom.jpg)
+
+### Frame Design
+
+The goal was something about as small as I could achieve that could carry a mobius camera and stabilize it with the above hardware. I started with something similar in my mind as [Flying Spark](../2014-07-04-flying-spark-3d-printed-mini-quad/index.qmd). I wanted a closed canopy over most of the hardware with the battery on the inside.  I also wanted the gimbal integrated into the main body to keep it compact. 
+
+![](media/Screen_Shot_2014-10-27_at_11.11.53_PM.png)
+
+  It wasn't possible to design a solid body that could hold all the components that could be assembled as a single piece. One thing I ended up doing to get it quite compact was to make a recessed pocket in the main body for the ESCs and PDB and hand the flight controller and gimbal controller from the top of the canopy, and then printing it upside down. 
+
+![](media/Screen_Shot_2014-10-14_at_9.08.12_AM.png)
+
+The arms have a little protective hub around the motors and a channel for the wires to run into the body. 
+
+![](media/arm.jpg)
+
+The cables then go into the central body to the ESCs. 
+
+![](media/escs.jpg)
+
+Here are the ESCs and power distribution board installed into the body of the frame. 
+
+![](media/esc_solder.jpg)
+
+And then Sparky2 and SparkyBGC installed into the bottom of the canopy and connected to the PDB ESCs and battery/voltage measurements. 
+
+![](media/boards_installed.jpg)
+
+And then covers placed over the boards and PDB to keep the battery away from them. 
+
+![](media/boards_covered.jpg)
+
+And here is the integrated gimbal on the front with the SparkyBGC sensor mounted to the top. 
+
+![](media/gimbal.jpg)
+
+### **Camera Control**
+
+The camera is stabilized via the SparkyBGC board. This communicates via CAN (which is a nice high speed bidirectional bus) to the Sparky2 board. This allows information from Sparky2 to control the camera angle. For example, you can set it up to only correct part of the flight controller roll which creates a smooth video that still shows some of the action. You can also set up the pitch to be controlled via a slider or switch from the transmitter that is relayed via the flight controller. 
+
+Finally, you can also use the Tau Labs Android GCS to talk to the flight controller and pass the location of the phone or tablet. The FC then calculates the heading and camera pitch to focus on that point of interest and tracks it. This doesn't work perfectly because the phone GPS is sometimes noisy or slow, but generally works quite well. You can also work around this by directly dragging and moving the POI location rather than tracking the tablet.
+
+### Final Assembly and Flights
+
+Here you can see it all put together. 
+
+![](media/gps.jpg)
+
+  
+
+![](media/closed.jpg)
+
+![](media/front.jpg)
+
+And with an updated canopy that has smoother lines:
+
+  
+Here it is being used to do some simple point of interest tracking to my phone, being held by my lovely assistant.
+
+  
+
+::: {.archive-video video-id="110206635" source="vimeo"}
+:::
+
+  
+
+### Crashing :D
+
+This quad got plenty of crashing :). You can see in the long video at the end where I plowed it into the ground upside down. The result was two broken arms:
+
+![](media/Screen_Shot_2014-11-02_at_3.38.08_PM.png)
+I also had a good time taking it out this weekend. My friends dog also absolutely loved chasing it (he loves running). I'm still not the best at flying backwards at high speeds while leading a dog, though. One of the earlier flights I caught a tree enough to unscrew a prop nut. It landed flat enough and unharmed. Unfortunately despite ten minutes of a number of us looking, we couldn't find the nut and I foolishly forgot spares. 
+
+I turns out you can use a spacer screwed on with camping tongs to get airborne again :D 
+
+![](media/IMG_20141101_174146_small.jpg)
+
+Unfortunately, that only lasted too long until I backed into another tree, this time much higher... 
+
+![](media/IMG_20141101_180642_small.jpg)
+
+So back to the 3D printer. I think I might try and smooth some of the curves in the canopy anyway, and possibly reinforce the walls some more.

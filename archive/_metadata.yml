@@ -1,0 +1,8 @@
+# Defaults applied to all migrated Build & Crash posts in archive/
+author: "R. James Cotton"
+freeze: true
+title-block-banner: true
+archive: true
+archive-source: "Build and Crash (Blogspot, 2010–2017)"
+categories:
+  - Build and Crash

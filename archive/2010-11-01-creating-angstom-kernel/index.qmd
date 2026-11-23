@@ -1,0 +1,11 @@
+---
+title: "Creating Angstom kernel"
+date: 2010-11-01
+original_url: "https://buildandcrash.blogspot.com/2010/11/creating-angstom-kernel.html"
+---
+Used ubuntu virtual drive
+Followed instructions at http://www.angstrom-distribution.org/building-angstrom to bitbake a kernel
+Prepared SD card as described in http://code.google.com/p/beagleboard/wiki/LinuxBootDiskFormat
+Followed instructions at http://elinux.org/BeagleBoardAndOpenEmbeddedGit#Create_partitions_and_format_the_SD-card for copying files to SD card
+
+The boot partition wasn't enough so copied files from disk that came with it.  This is because the new BB-xM doesn't have U-Boot in NAND Flash so needs it on the SD card.

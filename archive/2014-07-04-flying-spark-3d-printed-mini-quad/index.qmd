@@ -1,0 +1,108 @@
+---
+title: "Flying Spark - 3D printed mini quad"
+date: 2014-07-04
+original_url: "https://buildandcrash.blogspot.com/2014/07/flying-spark-3d-printed-mini-quad.html"
+image: "media/IMG_20140617_225430.jpg"
+---
+I've been wanting to design a 3D printed frame since having so much fun with Steve's. To cut to the chase, here is what I finished with:
+![Without prop guards](media/IMG_20140617_225430.jpg)
+  
+![Arms printed with prop guards](media/IMG_20140603_182153.jpg)
+  And here are some videos from it:
+
+  
+
+    
+
+  The ready to fly weight is 437g with 1500 mAh 3S batteries and mobius camera. It gets around 12 minutes of battery time with 5x3 motors although I haven't really pushed it.
+
+You can find the design on [Thingiverse](http://www.thingiverse.com/thing:384566) 
+
+### Design
+
+I had a few requirements: 
+
+- aerodynamic shape, fairly resilient to wind
+- center of gravity near center of thrust
+- keep component on the inside (mobius, battery, sparky)
+- pack up well for traveling
+- easy to replace broken parts
+
+The main hardware components were: 
+
+- [Sparky flight controller](../2013-05-19-sparky-testing-and-building-no-crashing/index.qmd) (of course)
+- SunnySky X2204 2300kv motors (with 12A ESCs)
+- 1500 mAh 3S batteries
+- Mobius video recorder
+
+  
+
+I originally started with FreeCAD but found OpenSCAD worked better for me, and was a useful new tool to learn. I started by modeling the outer hull. To decide the shape I simply took the battery, sparky and mobius and figured out the smallest way to stack them together. 
+
+![](media/IMG_20140617_224923.jpg)
+
+Then I modeled a nice smooth hull around that: 
+
+![](media/Screen_Shot_2014-06-17_at_10.31.46_PM.png)
+
+and the internal components, considering how to make sure the negative space would successfully print: 
+
+![](media/Screen_Shot_2014-06-17_at_10.34.02_PM.png)
+
+Giving the main chassis as the difference between the two: 
+
+![](media/Screen_Shot_2014-06-17_at_10.33.40_PM.png)
+
+As well as arms that can be plugged into the sockets, with a split in the middle to decrease resistance to airflow. You can also see in the above images that I made a variant with prop guards. 
+
+![](media/Screen_Shot_2014-06-17_at_10.26.27_PM.png)
+
+### Printed model
+
+![](media/IMG_20140617_225258.jpg)
+
+Printed with 3 shells and 30% infill the printed parts weigh 122 g. 
+
+![](media/IMG_20140617_224952.jpg)
+
+![](media/IMG_20140617_225744.jpg)
+
+![](media/IMG_20140617_225013.jpg)
+
+![](media/IMG_20140617_225107.jpg)
+
+![](media/IMG_20140707_091030.jpg)
+
+and it packs up pretty nicely for traveling (remove 4 screws and arms pull out of sockets) if you need to disassemble it (e.g. for going into checked luggage). 
+
+![](media/IMG_20140623_120750.jpg)
+
+### Flight performance
+
+So of course, the first thing I did was run the latest version of autotuning:  
+
+, which gave these properties and PID settings: 
+
+![](media/Screen_Shot_2014-07-03_at_7.50.16_PM.png)
+I was really pleased with the performance of the autotune algorithm actually, it was really windy where I was traveling and I tried manually tuning it and couldn't beat the performance for flying well but not twitching in response to the wind.
+
+It responds quite symmetrically. It also has a ton of pop. In fact, when I first tested it indoors and gunned it, I had a nice collision with the roof. This was flying the prototype arms printed with 10% infill: 
+
+![](media/IMG_20140612_175806.jpg)
+
+However, the 30% fill are a lot more robust and so far I haven't managed to break one. As I mentioned, the main purpose way to travel well, and I was really pleased with that. Using 65mm (from edge of frame to center of motor) arms it would drop in my small backpack with props on and had no issues. The problem with that length is it leaves a tiny bit of blade in the frame. The 75mm arm does not, but wouldn't quite fit in my backpack. I might try modifying the chassis to move the arm back 5 mm which should fix it. 
+
+### Videos
+
+As I mentioned, this quad was largely designed to be small, travel well, and behave in the wind. I took it to a conference in Santorini which really put those things to the test. I'm really quite pleased with the results. Here are some videos: 
+
+::: {.archive-video video-id="99929749" source="vimeo"}
+:::
+
+::: {.archive-video video-id="99939830" source="vimeo"}
+:::
+
+  
+
+::: {.archive-video video-id="99941770" source="vimeo"}
+:::

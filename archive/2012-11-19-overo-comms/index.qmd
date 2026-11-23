@@ -1,0 +1,10 @@
+---
+title: "Overo Comms!"
+date: 2012-11-19
+original_url: "https://buildandcrash.blogspot.com/2012/11/overo-comms.html"
+image: "media/Screen_Shot_2012-11-19_at_11.30.03_PM.png"
+---
+Ah, finally found the problem with the Overo.  After hours and hours of tracking down an imaginary hardware bug due to the fact my scope sucks, it turned out to be an IRQ configuration. 
+
+![](media/Screen_Shot_2012-11-19_at_11.30.03_PM.png)
+So now I am just waiting for a new part to try out in the power circuit and then the design will be ready to spin a second version.

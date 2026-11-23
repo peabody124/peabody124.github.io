@@ -1,0 +1,46 @@
+---
+title: "BB-xM for wireless video"
+date: 2010-10-31
+original_url: "https://buildandcrash.blogspot.com/2010/10/bb-xm-for-wireless-video.html"
+---
+Using a BeagleBoard-xM for wireless video. Update the demo image on disk using the [BeagleBoard validation image](http://beagleboard-validation.s3.amazonaws.com/deploy/201008201549/sd/list.html).
+
+### Connecting to wireless network
+
+```bash
+opkg install wireless-tools
+opkg install kernel-module-zd1211rw
+opkg install zd1211-firmware
+
+modprobe zd1211rw
+
+iwconfig wlan0 mode managed
+iwconfig wlan0 essid “2WIRE556”
+iwconfig wlan0 key 6845155005
+iwconfig wlan0 channel auto
+
+ifup wlan0
+ifconfig wlan0 up
+udhcpc wlan0
+```
+
+Starting the camera 
+opkg install kernel-module-uvcvideo
+opkg install ti-dmai
+opkg install ti-cmem-module
+
+modprobe uvcvideo
+opkg install ffmeg 
+opkg install gstreamer-ti
+opkg install gst-plugin-avi
+opkg install gst-plugin-video4linux2
+opkg install gst-plugin-videorate
+
+opkg install task-gstreamer-ti
+opkg install gst-plugin-udp
+
+modprobe sdmak
+modprobe cmemk
+
+gst-launch v4l2src device=/dev/video0 ! video/x-raw-yuv,width=640,height=480,framerate=15/1 ! videorate ! avimux ! filesink location=video4.avi
+http://processors.wiki.ti.com/index.php/Example_GStreamer_Pipelines

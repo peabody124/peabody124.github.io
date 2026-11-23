@@ -1,0 +1,15 @@
+---
+title: "Build & Crash Archive (2010–2017)"
+subtitle: "Historical posts migrated from buildandcrash.blogspot.com"
+listing:
+  contents: archive
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+page-layout: full
+title-block-banner: true
+---
+
+These posts were originally published between 2010 and 2017 on **Build and Crash** (*buildandcrash.blogspot.com*), covering open-source flight controllers (OpenPilot, Tau Labs, Sparky, Freedom), embedded hardware, CNC machining, and early EEG/EMG experiments. They are preserved here as a historical archive, separate from newer technical and research posts. You can also browse additional photos and clips from that era in the [Maker & Hardware Gallery](gallery.qmd).
