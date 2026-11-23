@@ -8,6 +8,7 @@ project:
 website:
   title: "R. James Cotton"
   site-url: "https://peabody124.github.io"
+  google-analytics: "G-W18R04KGXG"
   description: "Academic website and technical blog of R. James Cotton, MD, PhD — computer vision, biomechanics, neural interfaces, and precision rehabilitation, plus the Build and Crash (2010–2017) archive."
   navbar:
     left:
