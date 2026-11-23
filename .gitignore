@@ -16,6 +16,8 @@ Thumbs.db
 *.mp4
 !archive/*/media/ig_*.mp4
 !gallery/media/*.mp4
+!posts/*/*.mp4
+posts/*/data/
 *.mov
 *.avi
 *.mkv

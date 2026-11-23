@@ -2,6 +2,6 @@
 author: "R. James Cotton"
 freeze: true
 title-block-banner: true
-citation: true
+citation: false
 categories:
   - Research
