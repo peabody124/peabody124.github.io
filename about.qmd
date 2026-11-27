@@ -1,6 +1,6 @@
 ---
 title: "R. James Cotton"
-subtitle: "MD, PhD — Physician-Scientist & Assistant Professor"
+subtitle: "MD, PhD — Director of Precision Human Ability, Physician-Scientist & Assistant Professor"
 image: images/profile.jpg
 about:
   template: trestles
@@ -30,13 +30,13 @@ about:
       href: https://github.com/IntelligentSensingAndRehabilitation
 ---
 
-**R. James Cotton, MD, PhD**, is an electrical engineer, neuroscientist, and physiatrist. He is a Physician-Scientist and Lab Director of the **Intelligent Sensing and Rehabilitation Lab** within the Regenstein Center for Bionic Medicine at the [Shirley Ryan AbilityLab](https://www.sralab.org/researchers/r-james-cotton-md-phd), and an Assistant Professor in the Department of Physical Medicine & Rehabilitation at [Northwestern University Feinberg School of Medicine](https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49313) with a courtesy appointment in Computer Science at the [McCormick School of Engineering](https://www.mccormick.northwestern.edu/computer-science/people/faculty/affiliated.html).
+**R. James Cotton, MD, PhD**, is an electrical engineer, neuroscientist, and physiatrist. He serves as **Director of Precision Human Ability**, Physician-Scientist, and Lab Director of the **Intelligent Sensing and Rehabilitation Lab** within the Regenstein Center for Bionic Medicine at the [Shirley Ryan AbilityLab](https://www.sralab.org/researchers/r-james-cotton-md-phd), and as an Assistant Professor in the Department of Physical Medicine & Rehabilitation at [Northwestern University Feinberg School of Medicine](https://www.feinberg.northwestern.edu/faculty-profiles/az/profile.html?xid=49313) with a courtesy appointment in Computer Science at the [McCormick School of Engineering](https://www.mccormick.northwestern.edu/computer-science/people/faculty/affiliated.html).
 
-### Research
+### Research & Precision Human Ability
 
-Dr. Cotton's lab works at the intersection of artificial intelligence, wearable sensors, computer vision, causal and biomechanical modeling, and novel technologies to more precisely monitor and improve rehabilitation outcomes—focusing on methods that can be easily translated and disseminated at scale into the clinic or real world.
+As [Director of Precision Human Ability](https://bit.ly/4tdgBTg), Dr. Cotton leads efforts to advance a next-generation, data-driven approach to rehabilitation care at Shirley Ryan AbilityLab—developing predictive analytics, machine-learning models, and clinical dashboards that personalize interventions and enhance patient recovery trajectories.
 
-His team has developed wearable sensor and smartphone-based movement analysis platforms alongside multicamera markerless motion capture and differentiable biomechanical modeling pipelines to acquire precise clinical measurements of gait and upper-limb function. Current lines of work span foundation models for clinical movement understanding, gamified electromyographic (EMG) biofeedback for spinal cord injury, and causal frameworks for precision rehabilitation.
+Dr. Cotton's lab works at the intersection of artificial intelligence, wearable sensors, computer vision, causal and biomechanical modeling, and novel technologies to more precisely monitor and improve rehabilitation outcomes, focusing on methods that can be easily translated and disseminated at scale into the clinic or real world. His team has developed wearable sensor and smartphone-based movement analysis platforms alongside multicamera markerless motion capture and differentiable biomechanical modeling pipelines to acquire precise clinical measurements of gait and upper-limb function. Current lines of work span foundation models for clinical movement understanding, gamified electromyographic (EMG) biofeedback for spinal cord injury, and causal frameworks for precision rehabilitation.
 
 ### Education & Training
 
