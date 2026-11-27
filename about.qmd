@@ -15,7 +15,7 @@ about:
       href: https://www.sralab.org/researchers/r-james-cotton-md-phd
     - icon: mortarboard
       text: Google Scholar
-      href: https://scholar.google.com/citations?user=vY0f3b8AAAAJ
+      href: https://scholar.google.com/citations?user=M9ocp0cAAAAJ
     - icon: journal-medical
       text: NCBI / PubMed
       href: https://pubmed.ncbi.nlm.nih.gov/?term=Cotton+RJ%5BAuthor%5D+AND+(Northwestern%5BAffiliation%5D+OR+AbilityLab%5BAffiliation%5D+OR+Baylor%5BAffiliation%5D)
@@ -46,5 +46,5 @@ His team has developed wearable sensor and smartphone-based movement analysis pl
 
 ---
 
-- Browse peer-reviewed papers and preprints on the [Publications](publications.qmd) page, [Google Scholar](https://scholar.google.com/citations?user=vY0f3b8AAAAJ), or [NCBI / PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Cotton+RJ%5BAuthor%5D+AND+(Northwestern%5BAffiliation%5D+OR+AbilityLab%5BAffiliation%5D+OR+Baylor%5BAffiliation%5D)).
+- Browse peer-reviewed papers and preprints on the [Publications](publications.qmd) page, [Google Scholar](https://scholar.google.com/citations?user=M9ocp0cAAAAJ), or [NCBI / PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Cotton+RJ%5BAuthor%5D+AND+(Northwestern%5BAffiliation%5D+OR+AbilityLab%5BAffiliation%5D+OR+Baylor%5BAffiliation%5D)).
 - Read new technical writeups on the [Blog](index.qmd) or explore 2010–2017 robotics, flight controller, and hardware posts in the [Build & Crash Archive](archive.qmd).
