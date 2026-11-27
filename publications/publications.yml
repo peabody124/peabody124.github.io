@@ -3,6 +3,63 @@
 #         summary, image, primary_url, project_url, ieee_url, journal_url,
 #         journal_label, pubmed_url, arxiv_url, biorxiv_url, code_url, categories
 
+- title: "Probabilistic Monocular Biomechanical Reconstruction via Guided Flow Matching"
+  date: "2026-11-25"
+  year: 2026
+  author: "R. James Cotton, Fabian H. Sinz"
+  authors_display: "R. James Cotton, Fabian H. Sinz"
+  venue: "arXiv Preprint"
+  venue_short: "arXiv"
+  venue_type: "preprint"
+  summary: "We introduce the Biomechanical Flow Model (BFM), a continuous-time flow-matching prior over subject anthropometry, anatomical joint-angle trajectories, and virtual markers, trained on multi-camera clinical recordings from 565 participants and steered toward monocular 2D keypoints at test time without paired video training."
+  image: "publications/figures/arxiv-2611_33809.png"
+  primary_url: "https://arxiv.org/abs/2611.33809"
+  arxiv_url: "https://arxiv.org/abs/2611.33809"
+  categories:
+    - "Markerless Motion Capture"
+    - "Biomechanics"
+    - "AI & Foundation Models"
+    - "Clinical & Rehabilitation"
+    - "Preprints"
+
+- title: "Biomechanically Grounded Prediction of Selective Motor Control and Clinical Outcomes from Infant Video"
+  date: "2026-11-24"
+  year: 2026
+  author: "Divya Joshi, Ruize Yang, Colleen Peyton, R. James Cotton"
+  authors_display: "Divya Joshi, Ruize Yang, Colleen Peyton, R. James Cotton"
+  venue: "arXiv Preprint"
+  venue_short: "arXiv"
+  venue_type: "preprint"
+  summary: "We lift single-camera infant video into 3D body surface meshes, articulated infant-scaled biomechanical skeletons, and continuous joint-angle trajectories via Baby Biomechanical 3D Body (BB3D), and train a self-supervised masked spatio-temporal transformer across over one thousand recordings to predict all 32 joint-level BabyOSCAR selective motor control items and early cerebral palsy risk."
+  image: "publications/figures/arxiv-2611_32890.png"
+  primary_url: "https://arxiv.org/abs/2611.32890"
+  arxiv_url: "https://arxiv.org/abs/2611.32890"
+  categories:
+    - "Markerless Motion Capture"
+    - "Biomechanics"
+    - "AI & Foundation Models"
+    - "Clinical & Rehabilitation"
+    - "Preprints"
+
+- title: "FASCIA: Seeing Beneath the Surface with Queryable, Personalized Anatomy in Any Pose"
+  date: "2026-11-21"
+  year: 2026
+  author: "R. James Cotton, Tim Unger, Lucinda Williamson"
+  authors_display: "R. James Cotton, Tim Unger, Lucinda Williamson"
+  venue: "arXiv Preprint"
+  venue_short: "arXiv"
+  venue_type: "preprint"
+  summary: "We present FASCIA (Functional Anatomical Structures and Composition via Implicit Atlas), a Momentum Human Rig (MHR)-anchored framework that maps a 290-structure population anatomical template—bones, muscles, viscera, vessels, and adipose tissue—onto each individual through a smooth, invertible diffeomorphic warp conditioned on external body shape and skeletal proportions."
+  image: "publications/figures/arxiv-2611_29970.png"
+  primary_url: "https://arxiv.org/abs/2611.29970"
+  arxiv_url: "https://arxiv.org/abs/2611.29970"
+  categories:
+    - "Markerless Motion Capture"
+    - "Biomechanics"
+    - "AI & Foundation Models"
+    - "Clinical & Rehabilitation"
+    - "Preprints"
+
 - title: "Action Likelihood Analysis Reveals Altered Inter-Joint Coordination After Stroke During 3D Free Exploration"
   date: "2026-11-16"
   year: 2026
